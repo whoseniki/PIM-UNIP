@@ -1,0 +1,39 @@
+@model IEnumerable<DsiVendas.Models.Fornecedor>
+
+<h1>Lista de Fornecedores</h1>
+
+<p>
+    <a asp-action="Criar" class="btn btn-primary">Criar Novo Fornecedor</a>
+</p>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">CNPJ</th>
+            <th scope="col">Razão Social</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var fornecedor in Model)
+        {
+            <tr>
+                <td scope="row">@fornecedor.Id</td>
+                <td>@fornecedor.CNPJ</td>
+                <td>@fornecedor.RazaoSocial</td>
+                <td>@fornecedor.Endereco</td>
+                <td>@fornecedor.Telefone</td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@fornecedor.Id" class="btn btn-warning">Editar</a> | |
+                    
+                    <form asp-action="Remover" asp-route-id="@fornecedor.Id" method="post" style="display:inline;" onsubmit="return confirm('Tem certeza que deseja excluir este fornecedor?');">
+                        <button type="submit" class="btn btn-danger">Excluir</button>
+                    </form>
+                 </td>
+            </tr>
+        }
+    </tbody>
+</table>
