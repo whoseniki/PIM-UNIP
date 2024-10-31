@@ -21,38 +21,38 @@ namespace WpfVendas.Pages
     /// <summary>
     /// Interação lógica para pageClientes.xam
     /// </summary>
-    public partial class pageClientes : Page
+    public partial class pageFornecedores : Page
     {
-        private ClienteViewModel _viewModel;
+        private FornecedorViewModel _viewModel;
 
-        public pageClientes()
+        public pageFornecedores()
         {
             InitializeComponent();
-            _viewModel = new ClienteViewModel();
+            _viewModel = new FornecedorViewModel();
             DataContext = _viewModel;
         }
 
         private async void btnAtualizar_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.Clientes.Clear();
-            await _viewModel.CarregarClientesDaAPI();
+            _viewModel.Fornecedores.Clear();
+            await _viewModel.CarregarFornecedoresDaAPI();
         }
 
-        private void btnAddCliente_Click(object sender, RoutedEventArgs e)
+        private void btnAddFornecedor_Click(object sender, RoutedEventArgs e)
         {
           
         }
 
-        private void ClientesDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void FornecedoresDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             // Verifica se algum cliente está selecionado
-            if (ClientesDataGrid.SelectedItem is Cliente clienteSelecionado)
+            if (FornecedoresDataGrid.SelectedItem is Fornecedor fornecedorSelecionado)
             {
                 // Cria o ViewModel para a janela de edição, passando o cliente selecionado
-                var viewModel = new ClienteCadastroViewModel(null, clienteSelecionado);
+                var viewModel = new FornecedorCadastroViewModel(null, fornecedorSelecionado);
 
                 // Cria a janela de edição
-                var janelaCadastro = new cadCliente
+                var janelaCadastro = new cadFornecedor
                 {
                     DataContext = viewModel,
                     Owner = Window.GetWindow(this)  // Define o dono como a janela principal (MainWindow)

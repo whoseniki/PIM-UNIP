@@ -50,8 +50,10 @@ public class ClientesController(ApplicationDbContext context) : Controller
         return NotFound();
       }
       clienteExistente.Nome = cliente.Nome;
+      clienteExistente.CPF = cliente.CPF;
       clienteExistente.Email = cliente.Email;
       clienteExistente.Telefone = cliente.Telefone;
+      clienteExistente.Endereco = cliente.Endereco;
       context.Clientes.Update(clienteExistente); 
       context.SaveChanges(); 
       return RedirectToAction("Index");

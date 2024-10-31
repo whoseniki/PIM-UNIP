@@ -17,11 +17,21 @@ namespace WpfVendas.Views
     /// <summary>
     /// Lógica interna para cadCliente.xaml
     /// </summary>
-    public partial class cadCliente : Window
+    public partial class cadFornecedor : Window
     {
-        public cadCliente()
+        public cadFornecedor()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

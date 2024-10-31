@@ -1,4 +1,4 @@
-﻿<Page x:Class="WpfVendas.Pages.pageClientes"
+﻿<Page x:Class="WpfVendas.Pages.pageFornecedores"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,34 +6,28 @@
       xmlns:local="clr-namespace:WpfVendas.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="pageClientes">
+      Title="pageFornecedores">
 
     <Grid Background="#FFDCEAEB">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <!-- Linha para os botões -->
             <RowDefinition Height="*"/>
-            <!-- Linha para o DataGrid -->
         </Grid.RowDefinitions>
 
-        <!-- StackPanel para organizar os botões horizontalmente -->
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10,35,0,5" Width="704">
-            <!-- Botão Adicionar -->
-            <Button x:Name="btnAddCliente" Content="Adicionar" Width="70" Margin="5" Click="btnAddCliente_Click" Background="Black" Foreground="White" Height="30">
+            <Button x:Name="btnAddFornecedor" Content="Adicionar" Width="70" Margin="5" Click="btnAddFornecedor_Click" Background="Black" Foreground="White" Height="30">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
                             BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="1" 
                             CornerRadius="6">
-                            <!-- Arredondando as bordas -->
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
 
-            <!-- Botão Editar -->
             <Button Content="Editar" Width="70" Margin="5" Background="Black" Foreground="White" Height="30">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -41,14 +35,12 @@
                             BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="1" 
                             CornerRadius="6">
-                            <!-- Arredondando as bordas -->
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
 
-            <!-- Botão Excluir -->
             <Button Content="Excluir" Width="70" Margin="5" Background="Black" Foreground="White" Height="30">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -56,14 +48,12 @@
                             BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="1" 
                             CornerRadius="6">
-                            <!-- Arredondando as bordas -->
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Button.Template>
             </Button>
 
-            <!-- Botão Atualizar -->
             <Button x:Name="btnAtualizar" Content="Atualizar" Width="70" Margin="5" Click="btnAtualizar_Click" Background="Black" Foreground="White" Height="30">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -71,7 +61,6 @@
                             BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="1" 
                             CornerRadius="6">
-                            <!-- Arredondando as bordas -->
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
@@ -79,21 +68,20 @@
             </Button>
         </StackPanel>
 
-        <!-- DataGrid para exibir os clientes -->
         <DataGrid 
-              x:Name="ClientesDataGrid" 
-              ItemsSource="{Binding Clientes}"
-              SelectedItem="{Binding SelectedCliente}"
+              x:Name="FornecedoresDataGrid" 
+              ItemsSource="{Binding Fornecedores}"
+              SelectedItem="{Binding SelectedFornecedor}"
               AutoGenerateColumns="False"
               Margin="10,80,10,10"
               SelectionMode="Single"
               SelectionUnit="FullRow" 
-              MouseDoubleClick="ClientesDataGrid_MouseDoubleClick" 
+              MouseDoubleClick="FornecedoresDataGrid_MouseDoubleClick" 
               Background="#FFDCEAEB" Foreground="Black" Grid.RowSpan="2">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
-                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"/>
-                <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="CNPJ" Binding="{Binding CNPJ}"/>
+                <DataGridTextColumn Header="Razão Social" Binding="{Binding RazaoSocial}"/>
                 <DataGridTextColumn Header="Endereço" Binding="{Binding Endereco}"/>
                 <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}"/>
             </DataGrid.Columns>

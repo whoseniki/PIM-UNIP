@@ -12,38 +12,38 @@ using System.Threading.Tasks;
 
 namespace WpfVendas.ViewModels
 {
-    public class ClienteViewModel : INotifyPropertyChanged
+    public class FornecedorViewModel : INotifyPropertyChanged
     {
         private readonly HttpClient _httpClient;
 
-        public ObservableCollection<Cliente> Clientes { get; set; }
+        public ObservableCollection<Fornecedor> Fornecedores { get; set; }
 
-        public ClienteViewModel()
+        public FornecedorViewModel()
         {
             _httpClient = new HttpClient();
-            Clientes = new ObservableCollection<Cliente>();
-            //CarregarClientesDaAPI();
+            Fornecedores = new ObservableCollection<Fornecedor>();
+   
         }
 
-        public async Task CarregarClientesDaAPI()
+        public async Task CarregarFornecedoresDaAPI()
         {
             try
             {
-                var apiUrl = "http://localhost:5299/Api/GetClientes";
-                var clientesDaApi = await _httpClient.GetFromJsonAsync<Cliente[]>(apiUrl);
+                var apiUrl = "http://localhost:5299/Api/GetFornecedores";
+                var fornecedoresDaApi = await _httpClient.GetFromJsonAsync<Fornecedor[]>(apiUrl);
 
-                if (clientesDaApi != null)
+                if (fornecedoresDaApi != null)
                 {
-                    foreach (var cliente in clientesDaApi)
+                    foreach (var fornecedor in fornecedoresDaApi)
                     {
-                        Clientes.Add(cliente);
+                        Fornecedores.Add(fornecedor);
                     }
                 }
             }
             catch (Exception ex)
             {
 
-                Console.WriteLine($"Erro ao buscar clientes: {ex.Message}");
+                Console.WriteLine($"Erro ao buscar fornecedores: {ex.Message}");
             }
         }
 

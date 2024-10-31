@@ -9,17 +9,17 @@ using System.Windows.Input;
 
 namespace WpfVendas.ViewModels
 {
-    internal class ClienteCadastroViewModel : INotifyPropertyChanged
+    internal class FornecedorCadastroViewModel : INotifyPropertyChanged
     {
 
         private readonly HttpClient _httpClient;
-        private Cliente _cliente;
-        public Cliente Cliente
+        private Fornecedor _fornecedor;
+        public Fornecedor Fornecedor
         {
-            get => _cliente;
+            get => _fornecedor;
             set
             {
-                _cliente = value;
+                _fornecedor = value;
                 OnPropertyChanged();
             }
         }
@@ -29,56 +29,56 @@ namespace WpfVendas.ViewModels
 
         private readonly Action _fecharAction;
 
-        public ClienteCadastroViewModel(Action fecharAction, Cliente cliente = null)
+        public FornecedorCadastroViewModel(Action fecharAction, Fornecedor fornecedor = null)
         {
             _fecharAction = fecharAction;
-            Cliente = cliente ?? new Cliente(); // Se o cliente for null, criamos um novo.
-            SalvarCommand = new RelayCommand(SalvarCliente);
+            Fornecedor = fornecedor ?? new Fornecedor(); 
+            SalvarCommand = new RelayCommand(SalvarFornecedor);
             CancelarCommand = new RelayCommand(Cancelar);
         }
 
-        private void SalvarCliente(object obj)
+        private void SalvarFornecedor(object obj)
         {
-            if (Cliente != null)
+            if (Fornecedor != null)
             {
-                if (Cliente.Id == 0)
+                if (Fornecedor.Id == 0)
                 {
-                    CriarCliente(Cliente);
+                    CriarFornecedor(Fornecedor);
                 }
                 else
                 {
-                    AtualizarClienteAsync(Cliente);
+                    AtualizarFornecedorAsync(Fornecedor);
                 }
 
                 //_fecharAction();
             }
         }
 
-        private void CriarCliente(Cliente cliente)
+        private void CriarFornecedor(Fornecedor fornecedor)
         {
             // Lógica para criação do cliente (incluir cliente na base de dados, etc.)
         }
 
-        private async Task AtualizarClienteAsync(Cliente cliente)
+        private async Task AtualizarFornecedorAsync(Fornecedor fornecedor)
         {
             try
             {
-                var apiUrl = $"http://localhost:3000/Api/UpdateCliente/{cliente.Id}";
-                var response = await _httpClient.PutAsJsonAsync(apiUrl, cliente);
+                var apiUrl = $"http://localhost:3000/Api/UpdateFornecedor/{fornecedor.Id}";
+                var response = await _httpClient.PutAsJsonAsync(apiUrl, fornecedor);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show($"Cliente {cliente.Nome} atualizado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show($"Fornecedor {fornecedor.RazaoSocial} atualizado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
                          }
                 else
                 {
-                    MessageBox.Show($"Erro ao salvar o cliente: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"Erro ao salvar o fornecedor: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception ex)
             {
                 // Captura exceções e mostra a mensagem de erro
-                Console.WriteLine($"Erro ao atualizar o cliente: {ex.Message}");
+                Console.WriteLine($"Erro ao atualizar o fornecedor: {ex.Message}");
             }
         }
 

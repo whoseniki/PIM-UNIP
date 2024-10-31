@@ -93,9 +93,10 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding Id}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"/>
+                <DataGridTextColumn Header="CPF" Binding="{Binding Nome}"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
-                <DataGridTextColumn Header="Endereço" Binding="{Binding Endereco}"/>
-                <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}"/>
+                <DataGridTextColumn Header="Telefone" Binding="{Binding Endereco}"/>
+                <DataGridTextColumn Header="Endereço" Binding="{Binding Telefone}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
