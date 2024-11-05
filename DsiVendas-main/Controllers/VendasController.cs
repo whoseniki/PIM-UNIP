@@ -16,13 +16,17 @@ public class VendasController(ApplicationDbContext context) : Controller
         public IActionResult Criar()
         {
             var ListaFormaPagamento = new List<string>();
+            {
             ListaFormaPagamento.Add("Cartão de Débito");
             ListaFormaPagamento.Add("Cartão de Crédito");
             ListaFormaPagamento.Add("Boleto");
             ListaFormaPagamento.Add("PIX");
+            };
+
             ViewBag.Clientes = new SelectList(context.Clientes, "Id", "Nome");
             ViewBag.Produtos = new SelectList(context.Produtos, "Id", "Nome");
             ViewBag.FormaPagamentos = new SelectList(ListaFormaPagamento);
+
             return View();
         }
 
@@ -44,15 +48,19 @@ public class VendasController(ApplicationDbContext context) : Controller
         {
             context.Add(venda);
             await context.SaveChangesAsync();
+
             foreach (var item in itensVenda)
             {
+              var produto = context.Produtos.Find(item.ProdutoId);
+              if (produto != null)
+              {
                 item.VendaId = venda.Id;
                 item.PrecoUnitario = context.Produtos.Find(item.ProdutoId).Preco;
                 context.ItemsVenda.Add(item);
-            }
+              }
             await context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-
+            }
 
             ViewBag.Clientes = new SelectList(context.Clientes, "Id", "Nome", venda.Id);
             ViewBag.Produtos = new SelectList(context.Produtos, "Id", "Nome");

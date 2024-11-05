@@ -16,6 +16,7 @@ public class ProdutosController(ApplicationDbContext context) : Controller
   public IActionResult Criar()
   {
     ViewBag.Fornecedores = context.Fornecedores.ToList();
+    ViewBag.Produtos = context.Produtos.ToList();
     return View();
   }
 
@@ -36,6 +37,7 @@ public class ProdutosController(ApplicationDbContext context) : Controller
       return NotFound();
     }
     ViewBag.Fornecedores = context.Fornecedores.ToList();
+    ViewBag.Produtos = context.Produtos.ToList();
     return View(produto);
   }
 
@@ -49,6 +51,7 @@ public class ProdutosController(ApplicationDbContext context) : Controller
     }
     produtoExistente.Nome = produto.Nome;
     produtoExistente.Preco = produto.Preco;
+    produtoExistente.Quantidade = produto.Quantidade;
     produtoExistente.FornecedorId = produto.FornecedorId;
     context.Produtos.Update(produtoExistente);
     context.SaveChanges();

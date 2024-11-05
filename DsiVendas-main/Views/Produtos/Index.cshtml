@@ -12,6 +12,7 @@
       <th scope="col">ID</th>
       <th scope="col">Nome</th>
       <th scope="col">Preço</th>
+      <th scope="col">Quantidade Cadastrada</th>
       <th scope="col">Fornecedor</th>
 
     </tr>
@@ -23,6 +24,7 @@
         <td scope="row">@produto.Id</td>
         <td>@produto.Nome</td>
         <td>@produto.Preco.ToString("C")</td>
+        <td>@produto.Quantidade</td>
         <td>@produto.Fornecedor.RazaoSocial - @produto.Fornecedor.Telefone</td>
         <td>
           <a asp-action="Editar" asp-route-id="@produto.Id" class="btn btn-warning">Editar</a> 

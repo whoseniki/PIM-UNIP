@@ -12,9 +12,16 @@
         <input asp-for="Preco" class="form-control" required />
     </div>
     <div class="form-group w-50 mb-3">
-        <label class="form-label">Codigo do Fornecedor</label>
+    <label class="form-label">Quantidade</label>
+    <select asp-for="Quantidade" class="form-control"
+      asp-items="@(new SelectList(ViewBag.Produtos, "Id", "Quantidade"))" required>
+      <option value="">Selecione a Quantidade Cadastrada</option>
+    </select>
+  </div>
+  <div class="form-group w-50 mb-3">
+        <label class="form-label">Fornecedor</label>
         <select asp-for="FornecedorId" class="form-control"
-            asp-items="@(new SelectList(ViewBag.Fornecedores, "Id", "Nome"))" required>
+            asp-items="@(new SelectList(ViewBag.Fornecedores, "Id", "RazaoSocial"))" required>
             <option value="">Selecione um Fornecedor</option>
         </select>
     </div>
