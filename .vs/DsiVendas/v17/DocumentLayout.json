@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\DsiVendas-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\views\\pagefornecedores.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\pagefornecedores.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\views\\cadfornecedor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadfornecedor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\views\\cadcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "pageFornecedores.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\pageFornecedores.xaml",
-              "RelativeDocumentMoniker": "WpfVendas\\Views\\pageFornecedores.xaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\pageFornecedores.xaml",
-              "RelativeToolTip": "WpfVendas\\Views\\pageFornecedores.xaml",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml*",
+              "RelativeToolTip": "WpfVendas\\MainWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-31T13:19:09.164Z",
+              "WhenOpened": "2024-11-05T20:19:47.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "cadFornecedor.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadFornecedor.xaml",
-              "RelativeDocumentMoniker": "WpfVendas\\Views\\cadFornecedor.xaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadFornecedor.xaml",
-              "RelativeToolTip": "WpfVendas\\Views\\cadFornecedor.xaml",
+              "Title": "cadCliente.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCliente.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\Views\\cadCliente.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCliente.xaml*",
+              "RelativeToolTip": "WpfVendas\\Views\\cadCliente.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-31T12:56:44.184Z",
+              "WhenOpened": "2024-11-05T18:49:19.98Z",
               "EditorCaption": ""
             }
           ]

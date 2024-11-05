@@ -40,7 +40,8 @@ namespace WpfVendas.Pages
 
         private void btnAddFornecedor_Click(object sender, RoutedEventArgs e)
         {
-          
+            cadFornecedor cadFornecedor = new cadFornecedor();
+            cadFornecedor.ShowDialog();
         }
 
         private void FornecedoresDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)

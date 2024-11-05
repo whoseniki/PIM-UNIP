@@ -90,7 +90,7 @@
         <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Cliente.Endereco, UpdateSourceTrigger=PropertyChanged}" 
                  Margin="191,199,0,144" Width="250" Height="25" HorizontalAlignment="Left">
             <TextBox.Template>
-                <ControlTemplate TargetType="{x:Type TextBox}">
+                <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
                             BorderBrush="Black" 
                             BorderThickness="0.8" 

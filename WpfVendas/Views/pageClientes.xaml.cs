@@ -40,7 +40,8 @@ namespace WpfVendas.Pages
 
         private void btnAddCliente_Click(object sender, RoutedEventArgs e)
         {
-          
+            cadCliente cadCliente = new cadCliente();
+            cadCliente.ShowDialog();
         }
 
         private void ClientesDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)

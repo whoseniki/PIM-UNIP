@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\DsiVendas-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\views\\pagefornecedores.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\pagefornecedores.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\views\\pagefornecedores.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\pagefornecedores.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\models\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\models\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\views\\cadcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,39 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "pageFornecedores.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\pageFornecedores.xaml.cs",
-              "RelativeDocumentMoniker": "WpfVendas\\Views\\pageFornecedores.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\pageFornecedores.xaml.cs*",
-              "RelativeToolTip": "WpfVendas\\Views\\pageFornecedores.xaml.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T11:23:50.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "pageFornecedores.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\pageFornecedores.xaml",
-              "RelativeDocumentMoniker": "WpfVendas\\Views\\pageFornecedores.xaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\pageFornecedores.xaml",
-              "RelativeToolTip": "WpfVendas\\Views\\pageFornecedores.xaml",
+              "Title": "cadCliente.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCliente.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\Views\\cadCliente.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCliente.xaml*",
+              "RelativeToolTip": "WpfVendas\\Views\\cadCliente.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-31T11:22:27.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Fornecedor.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Models\\Fornecedor.cs",
-              "RelativeDocumentMoniker": "WpfVendas\\Models\\Fornecedor.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Models\\Fornecedor.cs",
-              "RelativeToolTip": "WpfVendas\\Models\\Fornecedor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T11:20:55.796Z",
+              "WhenOpened": "2024-11-05T18:49:19.98Z",
               "EditorCaption": ""
             }
           ]

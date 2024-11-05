@@ -27,12 +27,11 @@ namespace WpfVendas
             MainFrame.Content = new pageClientes();
         }
 
-        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        private void btnFornecedores_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Content = new pageFornecedores();
         }
-
-        private void MainFrame_Navigated_1(object sender, NavigationEventArgs e)
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
         }

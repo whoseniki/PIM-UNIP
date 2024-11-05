@@ -26,7 +26,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Fornecedores" Width="90" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+            <Button Content="Fornecedores" Click="btnFornecedores_Click" Width="90" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
