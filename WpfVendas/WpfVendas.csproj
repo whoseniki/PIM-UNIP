@@ -9,7 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="altaria.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Forms\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="altaria.png" />
   </ItemGroup>
 
 </Project>

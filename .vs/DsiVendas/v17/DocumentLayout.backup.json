@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\DsiVendas-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\views\\cadcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,18 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WpfVendas\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T19:13:35.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "cadCliente.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCliente.xaml",
-              "RelativeDocumentMoniker": "WpfVendas\\Views\\cadCliente.xaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCliente.xaml*",
-              "RelativeToolTip": "WpfVendas\\Views\\cadCliente.xaml*",
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "WpfVendas\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T18:20:38.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\LoginWindow.xaml",
+              "RelativeToolTip": "WpfVendas\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-05T18:49:19.98Z",
+              "WhenOpened": "2024-11-06T18:19:32.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml",
+              "RelativeToolTip": "WpfVendas\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-06T17:59:10.1Z",
               "EditorCaption": ""
             }
           ]

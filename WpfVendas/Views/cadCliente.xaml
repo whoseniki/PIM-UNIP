@@ -5,27 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfVendas.Views"
         mc:Ignorable="d"
-        d:DesignHeight="450" d:DesignWidth="800"
-        Title="CADASTRO DE CLIENTE" Height="450" Width="450
-" Background="#FFDCEAEB">
+        Title="CADASTRO DE CLIENTE" Height="470" Width="750" Background="#FFDCEAEB">
+
     <Grid Margin="20" Background="#FFDCEAEB">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="64"/>
-            <ColumnDefinition Width="800" />
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="594" />
         </Grid.ColumnDefinitions>
 
-        <!-- Label e TextBox para Nome -->
-        <Label Content="Nome:" Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" Margin="140,87,31,0"/>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Cliente.Nome, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="191,74,0,269" Width="250" Height="25" HorizontalAlignment="Left" Background="#FFDCEAEB" SelectionTextBrush="#FFDCEAEB" TextChanged="TextBox_TextChanged">
+        <Label Content="Nome:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="165,0,440,0" Background="#FFDCEAEB"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Cliente.Nome, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
@@ -38,10 +38,9 @@
             </TextBox.Template>
         </TextBox>
 
-        <!-- Label e TextBox para Email -->
-        <Label Content="CPF:" Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" Margin="152,130,-12,0"/>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Cliente.Email, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="191,117,0,226" Width="250" Height="25" HorizontalAlignment="Left" Background="#FFDCEAEB">
+        <Label Content="CPF:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="179,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="2" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Cliente.CPF, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
@@ -54,10 +53,9 @@
             </TextBox.Template>
         </TextBox>
 
-        <!-- Label e TextBox para Endereço -->
-        <Label Content="E-mail:" Grid.Row="2" VerticalAlignment="Top" Margin="140,171,0,0" Grid.RowSpan="4" Grid.Column="1"/>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Cliente.Endereco, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="191,159,0,184" Width="250" Height="25" HorizontalAlignment="Left">
+        <Label Content="Email:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="170,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="3" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Cliente.Email, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
@@ -70,10 +68,9 @@
             </TextBox.Template>
         </TextBox>
 
-        <!-- Label e TextBox para Telefone -->
-        <Label Content="Telefone:" Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" Margin="130,211,0,0"/>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Cliente.Telefone, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="191,242,0,101" Width="250" Height="25" HorizontalAlignment="Left">
+        <Label Content="Telefone:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2" Margin="154,10,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="4" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Cliente.Telefone, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
@@ -86,24 +83,23 @@
             </TextBox.Template>
         </TextBox>
 
-        <Label Content="Endereço:" Grid.Row="5" Grid.Column="1" VerticalAlignment="Top" Margin="125,255,10,0"/>
-        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Cliente.Endereco, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="191,199,0,144" Width="250" Height="25" HorizontalAlignment="Left">
+        <Label Content="Endereço:" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="150,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="5" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Cliente.Endereco, UpdateSourceTrigger=PropertyChanged}" 
+         Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
-                            BorderBrush="Black" 
-                            BorderThickness="0.8" 
-                            CornerRadius="6">
+                    BorderBrush="Black" 
+                    BorderThickness="0.8" 
+                    CornerRadius="6">
                         <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
                     </Border>
                 </ControlTemplate>
             </TextBox.Template>
         </TextBox>
 
-        <!-- StackPanel com Botões -->
-        <StackPanel Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" Margin="0,323,0,0" Width="760">
-            <Button Content="Salvar" Width="70" Height="20" Margin="400,0,0,-100" Command="{Binding SalvarCommand}" Foreground="White" Background="Black">
+        <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="230,1,0,1" Width="220">
+            <Button Content="Salvar" Width="90" Height="30" Margin="5" Command="{Binding SalvarCommand}" Foreground="White" Background="Black" >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -116,7 +112,7 @@
                 </Button.Template>
             </Button>
 
-            <Button Content="Cancelar" Width="70" Height="20" Margin="220,0,0,-100" Command="{Binding CancelarCommand}" Foreground="White" Background="Black">
+            <Button Content="Cancelar" Width="90" Height="30" Margin="5" Command="{Binding CancelarCommand}" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 

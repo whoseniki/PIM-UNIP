@@ -15,25 +15,20 @@ namespace WpfVendas
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
-        public MainWindow()
+        public LoginWindow()
         {
             InitializeComponent();
         }
 
-        private void btnClientes_Click(object sender, RoutedEventArgs e)
+        private void btnEntrar_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new pageClientes();
-        }
+            MainWindow mainWindow = new MainWindow();
 
-        private void btnFornecedores_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new pageFornecedores();
-        }
-        private void btnProduto_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.Content = new pageProdutos();
+            mainWindow.Show();
+
+            this.Close();
         }
     }
 }

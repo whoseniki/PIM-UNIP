@@ -1,11 +1,11 @@
-﻿<Window x:Class="WpfVendas.Views.cadFornecedor"
+﻿<Window x:Class="WpfVendas.Views.cadProduto"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfVendas.Views"
         mc:Ignorable="d"
-        Title="CADASTRO DE FORNECEDOR" Height="470" Width="750" Background="#FFDCEAEB">
+        Title="CADASTRO DE PRODUTO" Height="470" Width="750" Background="#FFDCEAEB">
 
     <Grid Margin="20" Background="#FFDCEAEB">
         <Grid.RowDefinitions>
@@ -22,8 +22,8 @@
             <ColumnDefinition Width="594" />
         </Grid.ColumnDefinitions>
 
-        <Label Content="CNPJ:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="172,0,440,0" Background="#FFDCEAEB"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fornecedor.CNPJ, UpdateSourceTrigger=PropertyChanged}" 
+        <Label Content="Nome:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="172,0,440,0" Background="#FFDCEAEB"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Produto.Nome, UpdateSourceTrigger=PropertyChanged}" 
                  Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
@@ -37,8 +37,8 @@
             </TextBox.Template>
         </TextBox>
 
-        <Label Content= "Razão Social:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="133,0,440,0" Background="#FFDCEAEB" />
-        <TextBox Grid.Row="2" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fornecedor.RazaoSocial, UpdateSourceTrigger=PropertyChanged}" 
+        <Label Content= "Preço:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="174,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="2" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Produto.Preco, UpdateSourceTrigger=PropertyChanged}" 
                  Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
@@ -52,8 +52,8 @@
             </TextBox.Template>
         </TextBox>
 
-        <Label Content="Endereço:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2" Margin="150,10,440,0" Background="#FFDCEAEB" />
-        <TextBox Grid.Row="3" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fornecedor.Endereco, UpdateSourceTrigger=PropertyChanged}" 
+        <Label Content="Quantidade:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2" Margin="140,10,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="3" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Produto.Quantidade, UpdateSourceTrigger=PropertyChanged}" 
                  Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
@@ -67,8 +67,8 @@
             </TextBox.Template>
         </TextBox>
 
-        <Label Content="Telefone:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="154,0,440,0" Background="#FFDCEAEB" />
-        <TextBox Grid.Row="4" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fornecedor.Telefone, UpdateSourceTrigger=PropertyChanged}" 
+        <Label Content="Fornecedor:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="143,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="4" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Produto.FornecedorId, UpdateSourceTrigger=PropertyChanged}" 
          Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">

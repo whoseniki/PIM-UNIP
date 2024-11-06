@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -11,9 +12,9 @@ namespace WpfVendas.ViewModels
 {
     internal class ClienteCadastroViewModel : INotifyPropertyChanged
     {
-
         private readonly HttpClient _httpClient;
         private Cliente _cliente;
+
         public Cliente Cliente
         {
             get => _cliente;
@@ -33,52 +34,72 @@ namespace WpfVendas.ViewModels
         {
             _fecharAction = fecharAction;
             Cliente = cliente ?? new Cliente(); // Se o cliente for null, criamos um novo.
+
+            // Inicializa o HttpClient (aqui ou injetado)
+            _httpClient = new HttpClient();
+
             SalvarCommand = new RelayCommand(SalvarCliente);
             CancelarCommand = new RelayCommand(Cancelar);
         }
 
-        private void SalvarCliente(object obj)
+        private async void SalvarCliente(object obj)
         {
             if (Cliente != null)
             {
                 if (Cliente.Id == 0)
                 {
-                    CriarCliente(Cliente);
+                    await CriarClienteAsync(Cliente);
                 }
                 else
                 {
-                    AtualizarClienteAsync(Cliente);
+                    await AtualizarClienteAsync(Cliente);
                 }
 
-                //_fecharAction();
+                _fecharAction(); // Fecha a janela após salvar
             }
         }
 
-        private void CriarCliente(Cliente cliente)
+        private async Task CriarClienteAsync(Cliente cliente)
         {
-            // Lógica para criação do cliente (incluir cliente na base de dados, etc.)
+            try
+            {
+                var apiUrl = "http://localhost:5299/Api/CreateCliente";
+                var response = await _httpClient.PostAsJsonAsync(apiUrl, cliente);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show($"Cliente {cliente.Nome} criado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Erro ao criar o cliente: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao criar o cliente: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private async Task AtualizarClienteAsync(Cliente cliente)
         {
             try
             {
-                var apiUrl = $"http://localhost:3000/Api/UpdateCliente/{cliente.Id}";
+                var apiUrl = $"http://localhost:5299/Api/UpdateCliente/{cliente.Id}";
                 var response = await _httpClient.PutAsJsonAsync(apiUrl, cliente);
 
                 if (response.IsSuccessStatusCode)
                 {
                     MessageBox.Show($"Cliente {cliente.Nome} atualizado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
-                         }
+                }
                 else
                 {
-                    MessageBox.Show($"Erro ao salvar o cliente: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"Erro ao atualizar o cliente: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception ex)
             {
-                // Captura exceções e mostra a mensagem de erro
-                Console.WriteLine($"Erro ao atualizar o cliente: {ex.Message}");
+                MessageBox.Show($"Erro ao atualizar o cliente: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
