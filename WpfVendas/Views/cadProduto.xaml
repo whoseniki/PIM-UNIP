@@ -69,7 +69,7 @@
 
         <Label Content="Fornecedor:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="143,0,440,0" Background="#FFDCEAEB" />
         <TextBox Grid.Row="4" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Produto.FornecedorId, UpdateSourceTrigger=PropertyChanged}" 
-         Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
+         Margin="0,12,0,12" Width="53" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 

@@ -23,7 +23,7 @@
         <Image Height="100" Source="/altaria.png" Stretch="Fill" Width="100" Margin="-390,0,0,0" Grid.Row="1" Grid.Column="1"/>
         <Label Content="Username:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2" Margin="210,10,440,0" Background="#FFDCEAEB" />
         <TextBox Grid.Row="3" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Produto.Quantidade, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="0,12,0,12" Width="150" HorizontalAlignment="Left">
+                 Margin="0,12,0,12" Width="150" HorizontalAlignment="Left" TextChanged="TextBox_TextChanged">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 

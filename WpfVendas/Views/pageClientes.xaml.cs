@@ -40,8 +40,14 @@ namespace WpfVendas.Pages
 
         private void btnAddCliente_Click(object sender, RoutedEventArgs e)
         {
-            cadCliente cadCliente = new cadCliente();
-            cadCliente.ShowDialog();
+                var janelaCadastro = new cadCliente
+                {
+                    Owner = Window.GetWindow(this)
+                };
+
+                var viewModel = new ClienteCadastroViewModel(janelaCadastro.Close, null);
+                janelaCadastro.DataContext = viewModel;
+                janelaCadastro.ShowDialog();
         }
 
         private void ClientesDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -60,6 +66,21 @@ namespace WpfVendas.Pages
                 };
 
                 janelaCadastro.ShowDialog();  // Mostra a janela de edição modal (abre por cima da MainWindow)
+            }
+        }
+
+        private void btnEditar_Click(object sender, RoutedEventArgs e)
+        {
+            if (ClientesDataGrid.SelectedItem is Cliente clienteSelecionado)
+            {
+                var viewModel = new ClienteCadastroViewModel(null, clienteSelecionado);
+                var janelaCadastro = new cadCliente
+                {
+                    DataContext = viewModel,
+                    Owner = Window.GetWindow(this)
+                };
+
+                janelaCadastro.ShowDialog(); 
             }
         }
     }

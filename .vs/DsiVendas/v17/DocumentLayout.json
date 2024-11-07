@@ -1,22 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\DsiVendas-main\\",
+  "WorkspaceRootPath": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\views\\cadproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadproduto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\views\\pageclientes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\pageclientes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\views\\pageclientes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\pageclientes.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\viewmodels\\clientecadastroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\viewmodels\\clientecadastroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\viewmodels\\clienteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\viewmodels\\clienteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\views\\cadcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\views\\cadcliente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadcliente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\viewmodels\\reladcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\viewmodels\\reladcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\unip\\documents\\github\\pim-unip\\wpfvendas\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +58,157 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WpfVendas\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml.cs",
-              "RelativeToolTip": "WpfVendas\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T19:13:35.863Z",
+              "DocumentIndex": 0,
+              "Title": "cadProduto.xaml",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\cadProduto.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\Views\\cadProduto.xaml",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\cadProduto.xaml",
+              "RelativeToolTip": "WpfVendas\\Views\\cadProduto.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T23:11:46.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "pageClientes.xaml",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\pageClientes.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\Views\\pageClientes.xaml",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\pageClientes.xaml",
+              "RelativeToolTip": "WpfVendas\\Views\\pageClientes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T22:53:54.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "cadCliente.xaml",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\cadCliente.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\Views\\cadCliente.xaml",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\cadCliente.xaml",
+              "RelativeToolTip": "WpfVendas\\Views\\cadCliente.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T22:47:38.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "cadCliente.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\cadCliente.xaml.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\Views\\cadCliente.xaml.cs",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\cadCliente.xaml.cs",
+              "RelativeToolTip": "WpfVendas\\Views\\cadCliente.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:44:38.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClienteCadastroViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\ViewModels\\ClienteCadastroViewModel.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\ViewModels\\ClienteCadastroViewModel.cs",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\ViewModels\\ClienteCadastroViewModel.cs",
+              "RelativeToolTip": "WpfVendas\\ViewModels\\ClienteCadastroViewModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwEEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:44:19.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pageClientes.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\pageClientes.xaml.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\Views\\pageClientes.xaml.cs",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Views\\pageClientes.xaml.cs",
+              "RelativeToolTip": "WpfVendas\\Views\\pageClientes.xaml.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:42:55.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClienteViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\ViewModels\\ClienteViewModel.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\ViewModels\\ClienteViewModel.cs",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\ViewModels\\ClienteViewModel.cs",
+              "RelativeToolTip": "WpfVendas\\ViewModels\\ClienteViewModel.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:42:22.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WpfVendas\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\MainWindow.xaml",
+              "RelativeToolTip": "WpfVendas\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-07T22:37:04.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReladCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\ViewModels\\ReladCommand.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\ViewModels\\ReladCommand.cs",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\ViewModels\\ReladCommand.cs",
+              "RelativeToolTip": "WpfVendas\\ViewModels\\ReladCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:42:03.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\Models\\AppUser.cs",
+              "RelativeToolTip": "WpfVendas\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:36:21.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfVendas\\LoginWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\LoginWindow.xaml.cs",
               "RelativeToolTip": "WpfVendas\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwCMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T18:20:38.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "WpfVendas\\LoginWindow.xaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\Unip\\Documents\\GitHub\\PIM-UNIP\\WpfVendas\\LoginWindow.xaml",
               "RelativeToolTip": "WpfVendas\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-06T18:19:32.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WpfVendas\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml",
-              "RelativeToolTip": "WpfVendas\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T17:59:10.1Z",
               "EditorCaption": ""
             }
           ]
