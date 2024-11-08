@@ -13,8 +13,8 @@
             <ColumnDefinition Width="329*"/>
         </Grid.ColumnDefinitions>
         <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="800" Orientation="Horizontal" Background="#FFDCEAEB" Grid.ColumnSpan="3">
-            <Image Height="70" Source="/altaria.png" Stretch="Fill" Width="70" Margin="50,0,0,0"/>
-            <Button Content="Clientes" Click="btnClientes_Click" Width="70" Height="30" RenderTransformOrigin="1.573,0.678" Margin="40,0,0,0" Foreground="White" Background="Black">
+            <Image Height="70" Source="/altaria.png" Stretch="Fill" Width="70" Margin="70,0,0,0"/>
+            <Button Content="Clientes" Click="btnClientes_Click" Width="70" Height="30" RenderTransformOrigin="1.573,0.678" Margin="60,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -38,18 +38,6 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Produtos" Click="btnProduto_Click" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
-                                BorderThickness="1" 
-                                CornerRadius="6">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
             <Button Content="Vendas" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -62,7 +50,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Recursos" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+            <Button Content="Recursos" Click="btnRecurso_Click" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -86,7 +74,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Sair" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+            <Button Content="Sair" Click="btnSair_Click" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 

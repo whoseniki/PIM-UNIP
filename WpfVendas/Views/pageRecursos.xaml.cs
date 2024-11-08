@@ -21,39 +21,45 @@ namespace WpfVendas.Pages
     /// <summary>
     /// Interação lógica para pageClientes.xam
     /// </summary>
-    public partial class pageProdutos : Page
+    public partial class pageRecursos : Page
     {
-        private ProdutoViewModel _viewModel;
+        private RecursoViewModel _viewModel;
 
-        public pageProdutos()
+        public pageRecursos()
         {
             InitializeComponent();
-            _viewModel = new ProdutoViewModel();
+            _viewModel = new RecursoViewModel();
             DataContext = _viewModel;
         }
 
         private async void btnAtualizar_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.Produto.Clear();
-            await _viewModel.CarregarProdutoDaAPI();
+            _viewModel.Recurso.Clear();
+            await _viewModel.CarregarRecursoDaAPI();
         }
 
-        private void btnAddProduto_Click(object sender, RoutedEventArgs e)
+        private void btnAddRecurso_Click(object sender, RoutedEventArgs e)
         {
-            cadProduto cadProduto = new cadProduto();
-            cadProduto.ShowDialog();
+            var janelaCadastro = new cadRecurso
+            {
+                Owner = Window.GetWindow(this)
+            };
+
+            var viewModel = new RecursoCadastroViewModel(janelaCadastro.Close, null);
+            janelaCadastro.DataContext = viewModel;
+            janelaCadastro.ShowDialog();
         }
 
-        private void ProdutoDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void RecursoDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             // Verifica se algum cliente está selecionado
-            if (ProdutoDataGrid.SelectedItem is Produto produtoSelecionado)
+            if (RecursoDataGrid.SelectedItem is Recurso recursoSelecionado)
             {
                 // Cria o ViewModel para a janela de edição, passando o cliente selecionado
-                var viewModel = new ProdutoCadastroViewModel(null, produtoSelecionado);
+                var viewModel = new RecursoCadastroViewModel(null, recursoSelecionado);
 
                 // Cria a janela de edição
-                var janelaCadastro = new cadProduto
+                var janelaCadastro = new cadRecurso
                 {
                     DataContext = viewModel,
                     Owner = Window.GetWindow(this)  // Define o dono como a janela principal (MainWindow)

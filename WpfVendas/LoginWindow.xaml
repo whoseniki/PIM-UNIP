@@ -22,8 +22,8 @@
         </Grid.ColumnDefinitions>
         <Image Height="100" Source="/altaria.png" Stretch="Fill" Width="100" Margin="-390,0,0,0" Grid.Row="1" Grid.Column="1"/>
         <Label Content="Username:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2" Margin="210,10,440,0" Background="#FFDCEAEB" />
-        <TextBox Grid.Row="3" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Produto.Quantidade, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="0,12,0,12" Width="150" HorizontalAlignment="Left" TextChanged="TextBox_TextChanged">
+        <TextBox Grid.Row="3" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding AppUser.Username, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="150" HorizontalAlignment="Left" >
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
@@ -37,7 +37,7 @@
         </TextBox>
 
         <Label Content="Senha:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="230,0,440,0" Background="#FFDCEAEB" />
-        <TextBox Grid.Row="4" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Produto.FornecedorId, UpdateSourceTrigger=PropertyChanged}" 
+        <TextBox Grid.Row="4" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding AppUser.Senha, UpdateSourceTrigger=PropertyChanged}" 
          Margin="0,12,0,12" Width="150" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
@@ -65,7 +65,7 @@
                 </Button.Template>
             </Button>
 
-            <Button Content="Sair" Width="90" Height="30" Margin="5" Command="{Binding CancelarCommand}" Foreground="White" Background="Black">
+            <Button Content="Sair" Click="btnSair_Click" Width="90" Height="30" Margin="5" Command="{Binding CancelarCommand}" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 

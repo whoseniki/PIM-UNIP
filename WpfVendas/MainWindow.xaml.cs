@@ -31,9 +31,17 @@ namespace WpfVendas
         {
             MainFrame.Content = new pageFornecedores();
         }
-        private void btnProduto_Click(object sender, RoutedEventArgs e)
+        private void btnRecurso_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new pageProdutos();
+            MainFrame.Content = new pageRecursos();
+        }
+        private void btnSair_Click(object sender, RoutedEventArgs e)
+        {
+            LoginWindow loginWindow = new LoginWindow();
+
+            loginWindow.Show();
+
+            this.Close();
         }
     }
 }

@@ -31,9 +31,9 @@ namespace WpfVendas
             this.Close();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnSair_Click(object sender, RoutedEventArgs e)
         {
-            
+            Application.Current.Shutdown();
         }
     }
 }

@@ -40,8 +40,14 @@ namespace WpfVendas.Pages
 
         private void btnAddFornecedor_Click(object sender, RoutedEventArgs e)
         {
-            cadFornecedor cadFornecedor = new cadFornecedor();
-            cadFornecedor.ShowDialog();
+            var janelaCadastro = new cadFornecedor
+            {
+                Owner = Window.GetWindow(this)
+            };
+
+            var viewModel = new FornecedorCadastroViewModel(janelaCadastro.Close, null);
+            janelaCadastro.DataContext = viewModel;
+            janelaCadastro.ShowDialog();
         }
 
         private void FornecedoresDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)

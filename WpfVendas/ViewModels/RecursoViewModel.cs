@@ -12,38 +12,38 @@ using System.Threading.Tasks;
 
 namespace WpfVendas.ViewModels
 {
-    public class ProdutoViewModel : INotifyPropertyChanged
+    public class RecursoViewModel : INotifyPropertyChanged
     {
         private readonly HttpClient _httpClient;
 
-        public ObservableCollection<Produto> Produto { get; set; }
+        public ObservableCollection<Recurso> Recurso { get; set; }
 
-        public ProdutoViewModel()
+        public RecursoViewModel()
         {
             _httpClient = new HttpClient();
-            Produto = new ObservableCollection<Produto>();
+            Recurso = new ObservableCollection<Recurso>();
    
         }
 
-        public async Task CarregarProdutoDaAPI()
+        public async Task CarregarRecursoDaAPI()
         {
             try
             {
-                var apiUrl = "http://localhost:5299/Api/GetProduto";
-                var produtoDaApi = await _httpClient.GetFromJsonAsync<Produto[]>(apiUrl);
+                var apiUrl = "http://localhost:5299/Api/GetRecurso";
+                var recursoDaApi = await _httpClient.GetFromJsonAsync<Recurso[]>(apiUrl);
 
-                if (produtoDaApi != null)
+                if (recursoDaApi != null)
                 {
-                    foreach (var produto in produtoDaApi)
+                    foreach (var recurso in recursoDaApi)
                     {
-                        Produto.Add(produto);
+                        Recurso.Add(recurso);
                     }
                 }
             }
             catch (Exception ex)
             {
 
-                Console.WriteLine($"Erro ao buscar produtos: {ex.Message}");
+                Console.WriteLine($"Erro ao buscar recursos: {ex.Message}");
             }
         }
 

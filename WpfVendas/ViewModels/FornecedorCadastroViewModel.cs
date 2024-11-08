@@ -32,31 +32,51 @@ namespace WpfVendas.ViewModels
         public FornecedorCadastroViewModel(Action fecharAction, Fornecedor fornecedor = null)
         {
             _fecharAction = fecharAction;
-            Fornecedor = fornecedor ?? new Fornecedor(); 
+            Fornecedor = fornecedor ?? new Fornecedor();
+
+            _httpClient = new HttpClient();
+
             SalvarCommand = new RelayCommand(SalvarFornecedor);
             CancelarCommand = new RelayCommand(Cancelar);
         }
 
-        private void SalvarFornecedor(object obj)
+        private async void SalvarFornecedor(object obj)
         {
             if (Fornecedor != null)
             {
                 if (Fornecedor.Id == 0)
                 {
-                    CriarFornecedor(Fornecedor);
+                    await CriarFornecedorAsync(Fornecedor);
                 }
                 else
                 {
-                    AtualizarFornecedorAsync(Fornecedor);
+                    await AtualizarFornecedorAsync(Fornecedor);
                 }
 
-                //_fecharAction();
+                _fecharAction(); // Fecha a janela após salvar
             }
         }
 
-        private void CriarFornecedor(Fornecedor fornecedor)
+        private async Task CriarFornecedorAsync(Fornecedor fornecedor)
         {
-            // Lógica para criação do cliente (incluir cliente na base de dados, etc.)
+            try
+            {
+                var apiUrl = "http://localhost:5299/Api/CreateFornecedor";
+                var response = await _httpClient.PostAsJsonAsync(apiUrl, fornecedor);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show($"Fornecedor {fornecedor.RazaoSocial} criado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Erro ao criar o fornecedor: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao criar o fornecedor: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private async Task AtualizarFornecedorAsync(Fornecedor fornecedor)

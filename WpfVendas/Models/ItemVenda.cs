@@ -7,8 +7,8 @@ namespace DsiVendas.Models
         public int VendaId { get; set; }
         public Venda Venda { get; set; }
 
-        public int ProdutoId { get; set; }
-        public Produto Produto { get; set; }
+        public int RecursoId { get; set; }
+        public Recurso Recurso { get; set; }
 
         public int Quantidade { get; set; }
         public decimal PrecoUnitario { get; set; }
