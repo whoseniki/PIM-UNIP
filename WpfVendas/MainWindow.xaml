@@ -62,7 +62,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Área De Plantio" Width="100" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+            <Button Content="Área De Plantio" Click="btnAreaPlantio_Click" Width="100" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
