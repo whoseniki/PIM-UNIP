@@ -25,6 +25,21 @@ namespace WpfVendas.ViewModels
             }
         }
 
+        private DateTime? _dataPlantio;
+        public DateTime? DataPlantio
+
+        {
+            get => _dataPlantio;
+            set
+            {
+                if (_dataPlantio != value)
+                {
+                    _dataPlantio = value;
+                    OnPropertyChanged(nameof(DataPlantio));
+                }
+            }
+        }
+
         public ICommand SalvarCommand { get; }
         public ICommand CancelarCommand { get; }
 

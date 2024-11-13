@@ -8,8 +8,6 @@ namespace DsiVendas.Models
 
         public DateTime DataVenda { get; set; }
         public string FormaPagamento { get; set; }
-        public decimal Total => ItensVenda?.Sum(item => item.SubTotal) ?? 0;
-
-        public ICollection<ItemVenda> ItensVenda { get; set; }
+        
     }
 }

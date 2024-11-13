@@ -12,9 +12,9 @@
             <ColumnDefinition Width="40*"/>
             <ColumnDefinition Width="329*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="800" Orientation="Horizontal" Background="#FFDCEAEB" Grid.ColumnSpan="3">
-            <Image Height="70" Source="/altaria.png" Stretch="Fill" Width="70" Margin="70,0,0,0"/>
-            <Button Content="Clientes" Click="btnClientes_Click" Width="70" Height="30" RenderTransformOrigin="1.573,0.678" Margin="60,0,0,0" Foreground="White" Background="Black">
+        <StackPanel HorizontalAlignment="Left" Height="112" VerticalAlignment="Top" Width="800" Orientation="Horizontal" Background="#FFDCEAEB" Grid.ColumnSpan="3">
+            <Image Height="70" Source="/altaria.png" Stretch="Fill" Width="70" Margin="30,0,0,0"/>
+            <Button Content="Clientes" Click="btnClientes_Click" Width="70" Height="30" RenderTransformOrigin="1.573,0.678" Margin="20,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -74,6 +74,44 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            <Button Content="Plantio" Click="btnPlantio_Click" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+        BorderBrush="{TemplateBinding BorderBrush}" 
+        BorderThickness="1" 
+        CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Content="Funcionários" Click="btnFornecedores_Click" Width="90" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+BorderBrush="{TemplateBinding BorderBrush}" 
+BorderThickness="1" 
+CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Content="Compra" Click="btnCompra_Click" Width="80" Height="30" Margin="-900,0,0,-70" Foreground="White" Background="Black">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+BorderBrush="{TemplateBinding BorderBrush}" 
+BorderThickness="1" 
+CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
             <Button Content="Sair" Click="btnSair_Click" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -87,6 +125,6 @@
                 </Button.Template>
             </Button>
         </StackPanel>
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,90,0,0" Background="#FFDCEAEB" Grid.ColumnSpan="3"/>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,112,0,0" Background="#FFDCEAEB" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>

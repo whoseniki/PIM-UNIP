@@ -10,8 +10,9 @@ namespace DsiVendas.Models
         public int RecursoId { get; set; }
         public Recurso Recurso { get; set; }
 
-        public int Quantidade { get; set; }
         public decimal PrecoUnitario { get; set; }
+        public int Quantidade { get; set; }
         public decimal SubTotal => Quantidade * PrecoUnitario;
+        
     }
 }
