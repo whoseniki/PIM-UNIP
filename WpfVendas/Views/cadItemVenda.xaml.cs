@@ -12,25 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DsiVendas.Models;
-using WpfVendas.ViewModels;
 
 namespace WpfVendas.Views
 {
     /// <summary>
     /// Lógica interna para cadCliente.xaml
     /// </summary>
-    public partial class cadVenda : Window
+    public partial class cadItemVenda : Window
     {
-        public cadVenda()
+        public cadItemVenda()
         {
             InitializeComponent();
-        }
-        private void btnAddItem_Click(object sender, RoutedEventArgs e)
-        {
-            var janelaCadastro = new cadItemVenda
-            {
-                Owner = Window.GetWindow(this)
-            };
         }
     }
 }

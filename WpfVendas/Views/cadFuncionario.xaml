@@ -146,7 +146,7 @@
             </TextBox.Template>
         </TextBox>
 
-        <StackPanel Grid.Row="7" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,1,0,1" Width="220">
+        <StackPanel Grid.Row="7" Grid.Column="3" Orientation="Horizontal" HorizontalAlignment="Left" Margin="-10,1,0,1" Width="220">
             <Button Content="Salvar" Width="90" Height="30" Margin="5" Command="{Binding SalvarCommand}" Foreground="White" Background="Black" >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">

@@ -21,66 +21,51 @@ namespace WpfVendas.Pages
     /// <summary>
     /// Interação lógica para pageClientes.xam
     /// </summary>
-    public partial class pageVenda : Page
+    public partial class pageFuncionario : Page
     {
-        private VendaViewModel _viewModel;
+        private FuncionarioViewModel _viewModel;
 
-        public pageVenda()
+        public pageFuncionario()
         {
             InitializeComponent();
-            _viewModel = new VendaViewModel();
+            _viewModel = new FuncionarioViewModel();
             DataContext = _viewModel;
         }
 
         private async void btnAtualizar_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.Venda.Clear();
-            await _viewModel.CarregarVendaDaAPI();
+            _viewModel.Funcionario.Clear();
+            await _viewModel.CarregarFuncionarioDaAPI();
         }
 
-        private void btnAddVenda_Click(object sender, RoutedEventArgs e)
+        private void btnAddFuncionario_Click(object sender, RoutedEventArgs e)
         {
-            var janelaCadastro = new cadVenda
+            var janelaCadastro = new cadFuncionario
             {
                 Owner = Window.GetWindow(this)
             };
 
-            var viewModel = new VendaCadastroViewModel(janelaCadastro.Close, null);
+            var viewModel = new FuncionarioCadastroViewModel(janelaCadastro.Close, null);
             janelaCadastro.DataContext = viewModel;
             janelaCadastro.ShowDialog();
         }
 
-        private void VendaDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void FuncionarioDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             // Verifica se algum cliente está selecionado
-            if (VendaDataGrid.SelectedItem is Venda vendaSelecionado)
+            if (FuncionarioDataGrid.SelectedItem is Funcionario funcionarioSelecionado)
             {
                 // Cria o ViewModel para a janela de edição, passando o cliente selecionado
-                var viewModel = new VendaCadastroViewModel(null, vendaSelecionado);
+                var viewModel = new FuncionarioCadastroViewModel(null, funcionarioSelecionado);
 
                 // Cria a janela de edição
-                var janelaCadastro = new cadVenda
+                var janelaCadastro = new cadFuncionario
                 {
                     DataContext = viewModel,
                     Owner = Window.GetWindow(this)  // Define o dono como a janela principal (MainWindow)
                 };
 
                 janelaCadastro.ShowDialog();  // Mostra a janela de edição modal (abre por cima da MainWindow)
-            }
-        }
-
-        private void btnEditar_Click(object sender, RoutedEventArgs e)
-        {
-            if (VendaDataGrid.SelectedItem is Venda vendaSelecionado)
-            {
-                var viewModel = new VendaCadastroViewModel(null, vendaSelecionado);
-                var janelaCadastro = new cadVenda
-                {
-                    DataContext = viewModel,
-                    Owner = Window.GetWindow(this)
-                };
-
-                janelaCadastro.ShowDialog();
             }
         }
     }

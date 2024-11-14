@@ -20,4 +20,10 @@
     <Resource Include="altaria.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="Views\pageFuncionario.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>

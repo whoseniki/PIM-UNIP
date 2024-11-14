@@ -15,7 +15,7 @@ namespace WpfVendas.ViewModels
         private readonly HttpClient _httpClient;
         private Venda _venda;
 
-        public Venda venda
+        public Venda Venda
         {
             get => _venda;
             set
@@ -72,12 +72,12 @@ namespace WpfVendas.ViewModels
                 }
                 else
                 {
-                    MessageBox.Show($"Erro ao criar plantio: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"Erro ao criar venda: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao criar plantio: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Erro ao criar venda: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

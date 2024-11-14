@@ -14,7 +14,7 @@
             <RowDefinition Height="50" />
             <RowDefinition Height="50" />
             <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="55" />
             <RowDefinition Height="50" />
             <RowDefinition Height="50" />
         </Grid.RowDefinitions>
@@ -23,9 +23,9 @@
             <ColumnDefinition Width="594" />
         </Grid.ColumnDefinitions>
 
-        <Label Content="Nome:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="165,0,440,0" Background="#FFDCEAEB"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding AreaPlantio.Nome, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
+        <Label Content="Venda ID:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="153,0,440,0" Background="#FFDCEAEB"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Venda.Id, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="70" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
@@ -38,9 +38,9 @@
             </TextBox.Template>
         </TextBox>
 
-        <Label Content="Localização:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="138,0,440,0" Background="#FFDCEAEB" />
-        <TextBox Grid.Row="2" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding AreaPlantio.Localizacao, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
+        <Label Content="Cliente ID:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="147,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="2" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Venda.ClienteId, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="70" HorizontalAlignment="Left">
             <TextBox.Template>
                 <ControlTemplate TargetType="TextBox">
                     <Border Background="White" 
@@ -53,26 +53,33 @@
             </TextBox.Template>
         </TextBox>
 
-        <Label Content="Hectares:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="152,0,440,0" Background="#FFDCEAEB" />
-        <TextBox Grid.Row="3" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding AreaPlantio.Hectares, UpdateSourceTrigger=PropertyChanged}" 
-                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
-            <TextBox.Template>
-                <ControlTemplate TargetType="TextBox">
-                    <Border Background="White" 
-                            BorderBrush="Black" 
-                            BorderThickness="0.8" 
-                            CornerRadius="6">
-                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
-                    </Border>
-                </ControlTemplate>
-            </TextBox.Template>
-        </TextBox>
+        <Label Content="Forma de Pagamento:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="86,0,440,0" Background="#FFDCEAEB" />
+        <ComboBox Grid.Row="4" Grid.Column="1" Width="250" Margin="0,12,0,12" HorizontalAlignment="Left" 
+          SelectedItem="{Binding Venda.FormaPagamento, UpdateSourceTrigger=PropertyChanged}" BorderBrush="#FFDCEAEB" Background="#FFDCEAEB">
+            <ComboBoxItem Content="PIX"/>
+            <ComboBoxItem Content="Cartão de débito"/>
+            <ComboBoxItem Content="Cartão de crédito"/>
+            <ComboBoxItem Content="Boleto"/>
+        </ComboBox>
 
-        <Label Content="Data Do Plantio:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2" Margin="115,10,440,0" Background="#FFDCEAEB" />
-        <DatePicker Grid.Row="4" Grid.Column="1" SelectedDate="{Binding Plantio.DataPlantio, UpdateSourceTrigger=PropertyChanged}" 
+        <Label Content="Data da Venda:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Height="26" Grid.ColumnSpan="2" Margin="120,10,440,0" Background="#FFDCEAEB" />
+        <DatePicker Grid.Row="3" Grid.Column="1" SelectedDate="{Binding Venda.DataVenda, UpdateSourceTrigger=PropertyChanged}" 
             Margin="0,12,0,12" Width="250" HorizontalAlignment="Left" Foreground="Black" Background="#FFDCEAEB" />
 
-        <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="230,1,0,1" Width="220">
+            <Button x:Name="btnAddItem" Grid.Row="5" Grid.Column="2" Content="Adicionar Item" Width="95" Margin="-350,0,0,0" Click="btnAddItem_Click" Background="Black" Foreground="White" Height="30">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="1" 
+                    CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="230,-9,0,1" Width="220">
             <Button Content="Salvar" Width="90" Height="30" Margin="5" Command="{Binding SalvarCommand}" Foreground="White" Background="Black" >
                 <Button.Template>
                     <ControlTemplate TargetType="Button">

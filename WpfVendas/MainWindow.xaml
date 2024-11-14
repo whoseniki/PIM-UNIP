@@ -38,7 +38,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Vendas" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+            <Button Content="Vendas" Click="btnVenda_Click" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -87,7 +87,7 @@
                 </Button.Template>
             </Button>
 
-            <Button Content="Funcionários" Click="btnFornecedores_Click" Width="90" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+            <Button Content="Funcionários" Click="btnFuncionario_Click" Width="90" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -100,7 +100,7 @@ CornerRadius="6">
                 </Button.Template>
             </Button>
 
-            <Button Content="Compra" Click="btnCompra_Click" Width="80" Height="30" Margin="-900,0,0,-70" Foreground="White" Background="Black">
+            <Button Content="Compra" Width="80" Height="30" Margin="-900,0,0,-70" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -112,7 +112,31 @@ CornerRadius="6">
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Sair" Click="btnSair_Click" Width="70" Height="30" Margin="5,0,0,0" Foreground="White" Background="Black">
+            <Button Content="Manutenção" Width="80" Height="30" Margin="-726,0,0,-70" Foreground="White" Background="Black">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+BorderBrush="{TemplateBinding BorderBrush}" 
+BorderThickness="1" 
+CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="Fazenda" Width="80" Height="30" Margin="-554,0,0,-70" Foreground="White" Background="Black">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+BorderBrush="{TemplateBinding BorderBrush}" 
+BorderThickness="1" 
+CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="Sair" Click="btnSair_Click" Width="70" Height="30" Margin="-393,0,0,-70" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 

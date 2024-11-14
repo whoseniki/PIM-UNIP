@@ -43,6 +43,14 @@ namespace WpfVendas
         {
             MainFrame.Content = new pagePlantio();
         }
+        private void btnFuncionario_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new pageFuncionario();
+        }
+        private void btnVenda_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new pageVenda();
+        }
         private void btnSair_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = new LoginWindow();

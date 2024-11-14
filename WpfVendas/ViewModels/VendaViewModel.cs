@@ -25,25 +25,25 @@ namespace WpfVendas.ViewModels
             
         }
 
-        public async Task CarregarPlantioDaAPI()
+        public async Task CarregarVendaDaAPI()
         {
             try
             {
-                var apiUrl = "http://localhost:5299/Api/GetPlantio";
-                var plantioDaApi = await _httpClient.GetFromJsonAsync<Plantio[]>(apiUrl);
+                var apiUrl = "http://localhost:5299/Api/GetVenda";
+                var vendaDaApi = await _httpClient.GetFromJsonAsync<Venda[]>(apiUrl);
 
-                if (plantioDaApi != null)
+                if (vendaDaApi != null)
                 {
-                    foreach (var plantio in plantioDaApi)
+                    foreach (var venda in vendaDaApi)
                     {
-                        Plantio.Add(plantio);
+                        Venda.Add(venda);
                     }
                 }
             }
             catch (Exception ex)
             {
 
-                Console.WriteLine($"Erro ao buscar Plantio: {ex.Message}");
+                Console.WriteLine($"Erro ao buscar venda: {ex.Message}");
             }
         }
 
