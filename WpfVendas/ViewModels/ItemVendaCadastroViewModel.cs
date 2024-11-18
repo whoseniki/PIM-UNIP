@@ -43,8 +43,64 @@ namespace WpfVendas.ViewModels
         }
 
         private async void SalvarItemVenda(object obj)
-        {  
-             _fecharAction();
+        {
+            if (ItemVenda != null)
+            {
+                if (ItemVenda.Id == 0)
+                {
+                    await CriarItemVendaAsync(ItemVenda);
+                }
+                else
+                {
+                    await AtualizarItemVendaAsync(ItemVenda);
+                }
+
+                _fecharAction(); 
+            }
+        }
+
+        private async Task CriarItemVendaAsync(ItemVenda itemVenda)
+        {
+            try
+            {
+                var apiUrl = "http://localhost:5299/Api/CreateItemVenda";
+                var response = await _httpClient.PostAsJsonAsync(apiUrl, itemVenda);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show($"Item Venda {itemVenda.Id} criado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Erro ao criar o Item Venda: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao criar o Item Venda: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private async Task AtualizarItemVendaAsync(ItemVenda itemVenda)
+        {
+            try
+            {
+                var apiUrl = $"http://localhost:5299/Api/UpdateItemVenda/{itemVenda.Id}";
+                var response = await _httpClient.PutAsJsonAsync(apiUrl, itemVenda);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show($"Item Venda {itemVenda.Id} atualizado com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Erro ao atualizar o Item Venda: {response.StatusCode}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao atualizar o Item Venda: {ex.Message}", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
         private void Cancelar(object obj)
         {

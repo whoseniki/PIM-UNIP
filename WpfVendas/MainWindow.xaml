@@ -100,7 +100,7 @@ CornerRadius="6">
                 </Button.Template>
             </Button>
 
-            <Button Content="Compra" Width="80" Height="30" Margin="-900,0,0,-70" Foreground="White" Background="Black">
+            <Button Content="Compra" Click="btnCompra_Click" Width="80" Height="30" Margin="-900,0,0,-70" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -112,7 +112,7 @@ CornerRadius="6">
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Manutenção" Width="80" Height="30" Margin="-726,0,0,-70" Foreground="White" Background="Black">
+            <Button Content="Manutenção" Click="btnManutencao_Click" Width="80" Height="30" Margin="-726,0,0,-70" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 
@@ -124,7 +124,7 @@ CornerRadius="6">
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button Content="Fazenda" Width="80" Height="30" Margin="-554,0,0,-70" Foreground="White" Background="Black">
+            <Button Content="Fazenda" Click="btnFazenda_Click" Width="80" Height="30" Margin="-554,0,0,-70" Foreground="White" Background="Black">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}" 

@@ -51,6 +51,18 @@ namespace WpfVendas
         {
             MainFrame.Content = new pageVenda();
         }
+        private void btnFazenda_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new pageFazenda();
+        }
+        private void btnManutencao_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new pageManutencao();
+        }
+        private void btnCompra_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new pageCompra();
+        }
         private void btnSair_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = new LoginWindow();

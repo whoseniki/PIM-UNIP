@@ -22,7 +22,7 @@ namespace WpfVendas.ViewModels
         {
             _httpClient = new HttpClient();
             ItemVenda = new ObservableCollection<ItemVenda>();
-            //CarregarClientesDaAPI();
+            
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

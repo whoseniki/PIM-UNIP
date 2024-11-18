@@ -1,0 +1,144 @@
+﻿<Window x:Class="WpfVendas.Views.cadFazenda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfVendas.Views"
+        mc:Ignorable="d"
+        Title="CADASTRO DE FAZENDA" Height="470" Width="750" Background="#FFDCEAEB">
+
+    <Grid Margin="20" Background="#FFDCEAEB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="594" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Funcionário ID:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="124,0,440,0" Background="#FFDCEAEB"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fazenda.FuncionarioID, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="60" HorizontalAlignment="Left">
+            <TextBox.Template>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="White" 
+                            BorderBrush="Black" 
+                            BorderThickness="0.8" 
+                            CornerRadius="6">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+
+        <Label Content="Nome:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="165,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="1" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fazenda.Nome, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
+            <TextBox.Template>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="White" 
+                            BorderBrush="Black" 
+                            BorderThickness="0.8" 
+                            CornerRadius="6">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+
+        <Label Content="Hectares:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="153,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="2" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fazenda.Hectares, UpdateSourceTrigger=PropertyChanged}" 
+                 Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
+            <TextBox.Template>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="White" 
+                            BorderBrush="Black" 
+                            BorderThickness="0.8" 
+                            CornerRadius="6">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+
+        <Label Content="Endereço:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="148,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="3" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fazenda.Endereco, UpdateSourceTrigger=PropertyChanged}" 
+          Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
+            <TextBox.Template>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="White" 
+                     BorderBrush="Black" 
+                     BorderThickness="0.8" 
+                     CornerRadius="6">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+
+        <Label Content="Telefone:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="153,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="4" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fazenda.Telefone, UpdateSourceTrigger=PropertyChanged}" 
+  Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
+            <TextBox.Template>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="White" 
+             BorderBrush="Black" 
+             BorderThickness="0.8" 
+             CornerRadius="6">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+
+        <Label Content="E-Mail:" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Height="26" Grid.ColumnSpan="2" Margin="164,0,440,0" Background="#FFDCEAEB" />
+        <TextBox Grid.Row="5" Grid.Column="1" Background="#FFDCEAEB" Text="{Binding Fazenda.Email, UpdateSourceTrigger=PropertyChanged}" 
+  Margin="0,12,0,12" Width="250" HorizontalAlignment="Left">
+            <TextBox.Template>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="White" 
+             BorderBrush="Black" 
+             BorderThickness="0.8" 
+             CornerRadius="6">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </TextBox.Template>
+        </TextBox>
+
+        <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" Margin="230,1,0,1" Width="220">
+            <Button Content="Salvar" Width="90" Height="30" Margin="5" Command="{Binding SalvarCommand}" Foreground="White" Background="Black" >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="0.8" 
+                                CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Button Content="Cancelar" Width="90" Height="30" Margin="5" Command="{Binding CancelarCommand}" Foreground="White" Background="Black">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="0.8" 
+                                CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
