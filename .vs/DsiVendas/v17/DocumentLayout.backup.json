@@ -15,6 +15,10 @@
       "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadcompra.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\views\\cadcompra.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\views\\cadcompra.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|c:\\users\\user\\desktop\\dsivendas-main\\wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{54D8DE10-5457-4CCD-91B8-3693494AA872}|WpfVendas\\WpfVendas.csproj|solutionrelative:wpfvendas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -34,8 +38,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cadCompra.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCompra.xaml.cs",
+              "RelativeDocumentMoniker": "WpfVendas\\Views\\cadCompra.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCompra.xaml.cs",
+              "RelativeToolTip": "WpfVendas\\Views\\cadCompra.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:16:53.13Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,7 +60,7 @@
               "RelativeDocumentMoniker": "WpfVendas\\Views\\pageCompra.xaml.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\pageCompra.xaml.cs",
               "RelativeToolTip": "WpfVendas\\Views\\pageCompra.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T17:15:52.763Z",
               "EditorCaption": ""
@@ -58,8 +74,7 @@
               "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\pageCompra.xaml",
               "RelativeToolTip": "WpfVendas\\Views\\pageCompra.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-18T17:15:43.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T17:15:43.493Z"
             },
             {
               "$type": "Document",
@@ -70,12 +85,11 @@
               "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Views\\cadCompra.xaml",
               "RelativeToolTip": "WpfVendas\\Views\\cadCompra.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-18T16:33:13.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T16:33:13.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Compra.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\Models\\Compra.cs",
               "RelativeDocumentMoniker": "WpfVendas\\Models\\Compra.cs",
@@ -83,12 +97,11 @@
               "RelativeToolTip": "WpfVendas\\Models\\Compra.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:21:35.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T16:21:35.982Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfVendas\\MainWindow.xaml.cs",
@@ -96,20 +109,18 @@
               "RelativeToolTip": "WpfVendas\\MainWindow.xaml.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAA0wD8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T13:52:09.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T13:52:09.741Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfVendas\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\User\\Desktop\\DsiVendas-main\\WpfVendas\\MainWindow.xaml",
               "RelativeToolTip": "WpfVendas\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-18T13:23:09.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T13:23:09.524Z"
             }
           ]
         }
